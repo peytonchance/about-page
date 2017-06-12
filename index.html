@@ -10,60 +10,102 @@
 
     <!-- Bootstrap CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" type="text/css" href="style.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/style.css"></link>
   </head>
 
   <body>
-    <div class="container">
-      <div class="row header">
+    <div class="container-fluid header">
+      <div class="container">
+      <div class="row">
         <div class="col-md-12">
           <h1>Peyton Chance: About Me</h1>
         </div>
       </div>
+    </div>
+  </div>
 
-
-      <div class="row intro">
+  <div class="container-fluid bio">
+    <div class="container">
+      <div class="row">
         <div class="col-md-6 col-xs-12 intro-image">
-          <img src="assets/peyton.jpg" alt="Portrait of Peyton Chance">
+          <img src="img/peyton.jpg" alt="Portrait of Peyton Chance">
         </div>
         <div class="col-md-6 col-xs-12 intro-text">
-          <p>Hey there, I’m Peyton. I’m a budding web developer and student of Latin American politics.</p>
+          <p>Hey there, I'm Peyton. I'm a budding web developer and student of Latin American politics.</p>
 
           <p>I am a rising senior media and journalism major with a specialization in interactive multimedia at the University of North Carolina at Chapel Hill. I have a second major in global studies and a minor in dramaturgy.</p>
 
-          <p>I’m passionate about connecting with others through language, interactive media, and effective leadership.</p>
+          <p>I'm passionate about connecting with others through language, interactive media, and effective leadership.</p>
 
           <p>Please feel free to contact me!</p>
         </div>
       </div>
-
+    </div>
     </div>
 
     <div class="container-fluid work">
-      <div class="container">
-        <div class="row work-row">
-          <div class="col-md-12">
-            <!-- Insert Carousel of Work Here -->
-          </div>
-        </div>
+        <div class="container">
+          <h2>Work</h2>
+          <div class="row">
+
+            <div class="col-md-6 col-sm-12">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <a href="http://cubasnewwave.unc.edu"><img src="img/phone_homepage-1024x683.jpg" alt="Cuba's New Wave" style="width:100%;"></a>
+                  </div>
+
+                  <div class="item">
+                    <a href="http://peytonchance.com/magazine"><img src="img/savvy.jpg" alt="Savvy Magazine" style="width:100%;"></a>
+                  </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 list">
+              <h4>Experience in:</h4>
+                <ul>
+                  <li>HTML5/CSS</li>
+                  <li>WordPress/PHP</li>
+                  <li>SASS</li>
+                  <li>Git/GitHub</li>
+                  <li>Adobe Illustrator, Photoshop & XD</li>
+                </ul>
+            </div>
       </div>
     </div>
+  </div>
 
-    <div class="container-fluid footer">
-      <div class="container">
+      <div class="container-fluid footer">
         <div class="row footer-row">
           <div class="col-md-12">
-            <!-- Insert Carousel of Work Here -->
           </div>
         </div>
-      </div>
-    </div>
+
 
   </body>
 </html>

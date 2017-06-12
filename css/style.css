@@ -1,0 +1,132 @@
+/* Global Styles */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #D9E4E8;
+}
+
+h1, h2{
+  font-size: 2.5em;
+  font-family: 'Montserrat', sans-serif;
+  color: #f7e678;
+}
+
+h2{
+  margin-bottom: 10px;
+}
+
+p{
+  font-size: 1em;
+  font-weight: 300;
+}
+
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+img:before{
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(to right, transparent, #fff);
+}
+
+.row{
+  margin-bottom: 30px;
+}
+
+
+/* Header */
+
+.header h1{
+  text-align: center;
+}
+
+.header{
+  margin-bottom: 30px;
+  margin-bottom: 0px;
+  background-color: #1C458D;
+}
+
+/* Intro */
+.bio{
+  background-color: #253A83;
+  padding-top: 30px;
+}
+
+.intro-text{
+  width: 40%;
+}
+
+
+/* Work */
+
+.work{
+  height: 500px;
+  background-color: #3E62AB;
+}
+.work h2{
+ text-align: center;
+ font-size: 3.5em;
+ margin-bottom: 30px;
+}
+.work img{
+  width: 50%;
+  height: auto;
+}
+
+.work ul{
+  list-style-type: none;
+}
+
+.carousel {
+  position: relative;
+  width:500px;
+  height:100%;
+  margin: auto;
+}
+
+img.item{
+  width: 60%;
+  height: 400px;
+  margin: auto;
+
+}
+
+.list{
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.list h4{
+  font-size: 1.8em;
+  color:#f7e678;
+}
+
+.list ul{
+  padding-left: 0px;
+  margin-top: 25px;
+}
+
+.list li{
+  margin-bottom: 8px;
+}
+/* Footer */
+
+.footer{
+  background-color: #1C458D;
+  height: 450px;
+}
+
+/* ------- Media Queries -------- */
+
+@media only screen and (max-width: 990px){
+  .intro-text{
+    margin-top: 30px;
+    width: 100%;
+  }
+}
