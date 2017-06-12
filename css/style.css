@@ -9,30 +9,27 @@ h1, h2{
   font-size: 2.5em;
   font-family: 'Montserrat', sans-serif;
   color: #f7e678;
+  text-align: center;
 }
 
 h2{
-  margin-bottom: 10px;
+  font-size: 3em;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
+h3{
+  font-size: 1.8em;
+  color:#f7e678;
+}
 p{
   font-size: 1em;
   font-weight: 300;
 }
 
-
 img{
   width: 100%;
   height: auto;
-}
-
-img:before{
-  content: '';
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: linear-gradient(to right, transparent, #fff);
 }
 
 .row{
@@ -40,11 +37,7 @@ img:before{
 }
 
 
-/* Header */
-
-.header h1{
-  text-align: center;
-}
+/* ----------- Header ------------- */
 
 .header{
   margin-bottom: 30px;
@@ -52,7 +45,7 @@ img:before{
   background-color: #1C458D;
 }
 
-/* Intro */
+/* ------------ Intro --------------*/
 .bio{
   background-color: #253A83;
   padding-top: 30px;
@@ -62,18 +55,21 @@ img:before{
   width: 40%;
 }
 
+.intro-text a{
+  color: #f7e678;
+}
 
-/* Work */
+.intro-text a:hover{
+  text-decoration: none;
+}
+
+
+/* ------------- Work -------------- */
 
 .work{
-  height: 500px;
   background-color: #3E62AB;
 }
-.work h2{
- text-align: center;
- font-size: 3.5em;
- margin-bottom: 30px;
-}
+
 .work img{
   width: 50%;
   height: auto;
@@ -102,11 +98,6 @@ img.item{
   padding-top: 20px;
 }
 
-.list h4{
-  font-size: 1.8em;
-  color:#f7e678;
-}
-
 .list ul{
   padding-left: 0px;
   margin-top: 25px;
@@ -115,11 +106,17 @@ img.item{
 .list li{
   margin-bottom: 8px;
 }
-/* Footer */
+/* -------------- Footer --------- */
 
 .footer{
   background-color: #1C458D;
-  height: 450px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.fa{
+  font-size: 4.5em;
+  color: #C0C0C0;
 }
 
 /* ------- Media Queries -------- */
@@ -128,5 +125,19 @@ img.item{
   .intro-text{
     margin-top: 30px;
     width: 100%;
+  }
+  .fa{
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .carousel {
+    position: relative;
+    width:300px;
+    height:100%;
+    margin-left: auto;
+    margin-right: 0px;
+    padding-left: 0px;
   }
 }
